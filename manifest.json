@@ -1,0 +1,10 @@
+{
+  "name": "Uye Extensions",
+  "description": "Uye's Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "uye.html",
+    "default_icon": "uye.png"
+  }
+}
