@@ -1,0 +1,32 @@
+{
+  "name": "Uye Extensions",
+  "description": "Uye's Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "uye.png"
+  },
+  "background": {
+    "service_worker": "/extension_scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/extension_scripts/content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "tabs"
+  ],
+  "icons": {
+    "16": "uye.png",
+    "32": "uye.png",
+    "48": "uye.png",
+    "128": "uye.png"
+  }
+}
